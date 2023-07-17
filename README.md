@@ -43,13 +43,13 @@
 
  
 
-** 1.  서론 **
+ 1.  서론 
 
 Html, css에 이어 javascript를 연습하기 위해 노마드코더의 수업을 수강 후 배운 것들을 정리하고자 한다. 수업을 듣고 내용을 다시 정리하는 과정에서 얻는 것들은 가치 있다고 생각한다. 
 
  
 
-**2. 자바스크립트 기초 **
+2. 자바스크립트 기초 
 
  
 
@@ -129,7 +129,8 @@ property는 객체의 속성을 나타내는 key와 value를 가진 형태이다
 
  
 
-2.5 함수 
+2.5 함수
+
 
 Function은 코드를 재사용하기 위해 만들어진다. 특정 코드를 함수로 정의해 캡슐화 한 후 여러 번 실행할 수 있게 한다.  
 
@@ -164,7 +165,9 @@ Ex) hungry(“chicken”); 의 코드에서 “chicken”이 인자이다.
 
 함수에 값을 보내는 게 인자, 받는 게 매개변수라 이해했다. 
 
+
 2.6 연산자 
+
 
 Js에서 연산자를 통해 할당, 비교, 산술, 비트 계산, 논리, 문자열, 삼항 등 다양한 명령을 내릴 수 있다. 
 
@@ -188,14 +191,15 @@ Typeof 연산자
 
 2.7 HTML 요소 찾기 
 
+
 querySelector를 통해 html의 요소를 찾을 수 있다. Js에서 html을 수정하기 위해서는 js에서 우선 html의 특정 요소에 대해 정의해야 하기 때문에 자주 사용한다. 
 
 Html에 없는 요소를 만들고자 한다면 createElement()를 통해 요소를 생성할 수 있다. 
 다만 이때 생성한 요소는 appendChild()를 통해 document 상에 추가해야 화면을 통해 볼 수 있다. 
 
- 
 
 2.8 event 
+
 
 Js에서 이벤트는 클릭, 스크롤, 무언가 입력하는 등의 상호작용으로 인해 발생하는 특정 사건을 의미한다. 모든 이벤트는 eventListener를 통해 js가 들을 수 있다.  
 
@@ -219,6 +223,7 @@ Element.addEventListener(“click”, eventhandler)
 
 3.1 첫 화면 
 
+
 Html에서 로그인 화면 혹은 환영 화면을 띄우려고 한다. 해당 목표를 이루기 위해 classList 기능을 사용했다. 
 
 각각의 화면에 div를 두고 해당 클래스와 hidden 클래스를 부여한다. css를 통해 hidden 클래스가 부여된 div는 화면에서 없애고, 조건을 통해 각 div 중 하나의 div만 해당 div의 classList 중 하나인 hidden을 제거해 볼 수 있게 한다. 
@@ -240,7 +245,8 @@ Ex) const HIDDEN_CLASSNAME=”hidden”;
 
  
 
-3.2 배경화면 
+3.2 배경화면
+
 
 출력하고자 하는 이미지를 각각 정의하고, 정의한 이미지들을 리스트에 넣었다. Math.random 함수를 통해 0~1 사이에 있는 임의의 수를 출력하고, 리스트의 요소 갯수만큼 곱한 뒤  Math.floor 함수를 통해 소숫점 이하의 수들을 모두 버렸다. 그렇게 리스트의 요소 갯수가 n일 때 0~n-1인 임의의 수를 얻을 수 있었다. 
 
@@ -256,6 +262,7 @@ Ex) const HIDDEN_CLASSNAME=”hidden”;
 
 3.3 시계 
 
+
 Html의 clock 부분을 querySelector를 통해 정의한다. GetClock이라는 함수를 하나 만들고, 이후 date=new date() 함수를 통해 date 타입을 가진 객체를 생성한다.  
 
 Hour를 date.getHours(), minutes를 date.getminutes(), seconds를 date.seconds로 각각 정의한다. 이후 html의 clock에 변수로 지정한 hours, minutes, seconds를 각각 innertext로 집어넣는다.  
@@ -268,6 +275,7 @@ Hour를 date.getHours(), minutes를 date.getminutes(), seconds를 date.seconds�
 
 3.4 명언 랜덤 출력 
 
+
 10개의 랜덤한 명언을 글귀와 저자로 나누어 객체 배열 형태로 저장한다. Quotes는 객체 배열이며, quote와 author라는 속성을 가지고 있다. 
 
 이후 html의 첫 번째 span을 quote로, 두 번째 span을 author로 정의한 뒤 quotes의 배열에서 랜덤으로 하나를 선택해 quote를 quote에, author를 author에 각각 innerText를 통해 추가한다. 
@@ -275,6 +283,7 @@ Hour를 date.getHours(), minutes를 date.getminutes(), seconds를 date.seconds�
  
 
 3.5 해야 할 것들 목록 
+
 
 해야 할 것들 목록을 작성하기 위해 html에 form을 하나 만든다. Form 안에는 input을 두고, input을 통해 입력받은 값을 저장해둘 ul도 하나 만든다. 
 
@@ -300,7 +309,8 @@ Filter 함수는 배열의 값 만큼 작동하는 함수로, 조건을 걸고 f
 
  
 
-4. 결론 
+4. 결론
+   
 
 Js 기초 강의를 들으며 객체와 연산자 등의 기본적인 개념들과 언어의 사용법들을 배을 수 있었다. 좋은 강의를 들으며 해당 논리를 이해하고 따라하는 것은 할 수 있었지만 혼자 논리를 구상해서 적용하기에는 아직 무리가 있을 듯 하다. Css를 통해 꾸며볼까 했지만 다른 프로젝트를 통해 js에 더 익숙해지는 게 더 나을 것 같아 생략했다. 더 노력하고 더 익숙해져서 더 나은 사람이 되고자 한다. 
 
